@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cardContainer">
+        <div class="cardFront">
+          <div class="cirlce">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+          </div>
+          <div class="detail">
+            <p class="cardNumber">0000 0000 0000 0000</p>
+            <div class="personDetail">
+              <div class="personName">JANE APPLESEED</div>
+              <div class="personMY">
+                <div class="personM">
+                  <span>00</span>
+                </div>
+                /
+                <div class="personY">
+                  <span>00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardBack">
+          <div class="personCvv">000</div>
+        </div>
+      </div>
+
+      <div class="detailContainer">
+        <form action="#" id="form">
+          <!-- CARDHOLDER NAME -->
+          <label for="cName">CARDHOLDER NAME</label><br />
+          <input type="text" name="cName" id="cName" maxlength="50" /><br />
+          <p class="nameError"></p>
+          <div class="spaceField"></div>
+          <!-- CARD NUMBER -->
+          <label for="cNumber">CARD NUMBER</label><br />
+          <input type="text" name="cNumber" id="cNumber" maxlength="16" /><br />
+          <p class="numberError"></p>
+          <div class="spaceField"></div>
+          <!-- CARD Expiry and Cvv -->
+          <div class="cardeandc">
+            <!-- CARD Expiry -->
+            <div class="cardexp">
+              <div class="cardexplabel">
+                <label for="">EXP. DATE (MM/YY)</label>
+              </div>
+              <div class="cardexpinput">
+                <!-- CARD Month -->
+                <div class="cardExpMonth">
+                  <input type="text" name="cMonth" id="cMonth" maxlength="2" />
+                  <p class="MonthError"></p>
+                  <div class="spaceField"></div>
+                </div>
+                <!-- CARD Year -->
+                <div class="cardExpYear">
+                  <input type="text" name="cYear" id="cYear" maxlength="2" />
+                  <p class="yearError"></p>
+                  <div class="spaceField"></div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD cvv -->
+            <div class="cardcvv">
+              <label for="">CVV</label>
+              <input type="text" name="cCvv" id="cCvv" maxlength="3" />
+              <p class="cvvError"></p>
+              <div class="spaceField"></div>
+            </div>
+          </div>
+        </form>
+        <input type="submit" value="SUBMIT" id="submit" />
+        <p class="thankYou">Thank You</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

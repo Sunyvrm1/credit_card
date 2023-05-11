@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --color1: red;
+  --color2: purple;
+  --color3: #fff;
+  --color4: aliceblue;
+  --color5: #adb5be;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.cardContainer {
+  height: 100vh;
+  /* background-color: var(--color2); */
+  background-image: url(bg-main-desktop.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+}
+.detailContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardFront {
+  height: 204px;
+  width: 354px;
+  /* background-color: var(--color4); */
+  background-image: url(bg-card-front.png);
+  border-radius: 10px;
+  padding: 20px 25px;
+  display: grid;
+  align-content: space-between;
+  margin-bottom: 60px;
+  color: var(--color3);
+  letter-spacing: 0.1em;
+}
+.cardNumber {
+  font-size: 25px;
+}
+.personDetail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.personMY {
+  display: flex;
+}
+.cirlce {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.circle1 {
+  background-color: var(--color3);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.circle2 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.cardBack {
+  padding: 20px 25px;
+  height: 204px;
+  width: 354px;
+  border-radius: 10px;
+  /* background-color: var(--color4); */
+  background: url(bg-card-back.png);
+  display: flex;
+  align-items: center;
+  color: var(--color3);
+  letter-spacing: 0.1em;
+}
+.personCvv {
+  background-color: var(--color5);
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 4px;
+}
+form {
+  width: 30%;
+}
+.spaceField {
+  height: 20px;
+}
+form input {
+  margin-top: 6px;
+  /* margin-bottom: 20px; */
+  height: 40px;
+  padding: 8px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid grey;
+}
+
+form input[name="cName"],
+input[name="cNumber"] {
+  width: 100%;
+}
+form input[name="cMonth"],
+input[name="cYear"] {
+  width: 100%;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.cardeandc {
+  display: flex;
+  gap: 20px;
+}
+
+.cardexpinput {
+  display: flex;
+  gap: 10px;
+}
+#submit {
+  width: 30%;
+  background-color: var(--color2);
+  color: #fff;
+  outline: none;
+  border: none;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+#submit:hover {
+  background-color: var(--color5);
+  color: var(--color3);
+}
+.thankYou {
+  display: none;
+  margin-top: 20px;
+}
+.req {
+  border-color: red;
+}
+.req input {
+  border-color: red;
+}
+.nameError,
+.numberError,
+.cvvError,
+.MonthError,
+.yearError {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+@media (max-width: 1600px) and (min-width: 1501px) {
+  form,
+  #submit {
+    width: 32%;
+  }
+}
+@media (max-width: 1500px) and (min-width: 1401px) {
+  form,
+  #submit {
+    width: 34%;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1301px) {
+  form,
+  #submit {
+    width: 38%;
+  }
+}
+@media (max-width: 1300px) and (min-width: 1101px) {
+  form,
+  #submit {
+    width: 40%;
+  }
+}
